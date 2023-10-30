@@ -27,3 +27,6 @@ fi
 
 
 git push --mirror https://github.com/yaroslav318/awesome-chatgpt.git
+
+
+

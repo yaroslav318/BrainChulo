@@ -25,6 +25,8 @@ Here are some general guidelines to follow when contributing to BrainChulo:
 
 ## Getting help
 
+
+
 If you need help or have questions about BrainChulo, please feel free to open an issue on the GitHub repository or join the discussion on our Discord channel.
 
 ## Code of Conduct

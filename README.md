@@ -248,3 +248,6 @@ https://betterprogramming.pub/a-deep-dive-into-guidances-source-code-16681a76fb2
 #### Prototyping a Small Guidance Select Clone With ExLLama Logits Bias
 https://betterprogramming.pub/prototyping-a-small-guidance-clone-with-exllama-logits-bias-de26f85623ab
 
+
+
+

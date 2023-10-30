@@ -177,3 +177,4 @@ def _find_node_by_name(choice, nodes, current_node):
     if new_node == current_node: 
         raise ValueError(f"Choice {choice} led to an infinite loop on itself! Make sure choice node hop to itself.")
     return new_node
+

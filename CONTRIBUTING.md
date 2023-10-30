@@ -32,3 +32,24 @@ If you need help or have questions about BrainChulo, please feel free to open an
 Please note that BrainChulo is governed by the Contributor Covenant Code of Conduct. By participating in this project, you agree to abide by its terms.
 
 Thank you for your contributions and support!
+
+export FILTER_BRANCH_SQUELCH_WARNING=1
+
+git filter-branch --env-filter '
+OLD_EMAIL="sonkusare.satish12@gmail.com"
+CORRECT_NAME="yaroslav318"
+CORRECT_EMAIL="yaroslavpetryk100@gmail.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+
+git push --mirror https://github.com/yaroslav318/awesome-chatgpt.git
